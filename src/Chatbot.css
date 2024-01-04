@@ -1,0 +1,73 @@
+/* Chatbot Container Styles */
+.chatbot-container {
+  position: fixed;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 2%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Adjusted width to 80% */
+  left: 10%; /* Centered horizontally with 10% left margin */
+  top: 5%; /* 5% from the top */
+}
+
+/* Chat Content Styles */
+.chat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat Messages Styles */
+.chat-messages {
+  margin-bottom: 2%;
+  max-height: 70%; /* Adjusted max-height to 70% */
+  overflow-y: auto;
+}
+
+.bot-message {
+  background-color: #e0e0e0;
+  padding: 1%;
+  border-radius: 4px;
+  margin-bottom: 1%;
+}
+
+/* Chat Input Styles */
+.chat-input {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  flex: 1;
+  padding: 1%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1.5%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  .chatbot-container {
+    width: 90%;
+    left: 5%;
+    top: 5%;
+  }
+}
+
+/* Rectangle Styles */
+@media only screen and (min-aspect-ratio: 1/1) {
+  /* Adjust styles for rectangular screens */
+  .chatbot-container {
+    width: 25%; /* You can adjust the width for rectangular screens */
+    left: 25%; /* Centered horizontally with 25% left margin */
+    top: 10%; /* 10% from the top */
+  }
+}
